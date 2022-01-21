@@ -8,11 +8,115 @@
 
 		<title>Portfolio Course</title>
 
+		<link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
 	</head>
 
 	<body>
+
+		<div class="mob-header">
+
+			<div class="d-flex">
+				
+				<div class="navbar-brand">
+
+					<a href="#"><img src="img/log.png" alt=""></a>
+
+				</div>
+
+				<button class="toggler-menu">
+
+					<span></span>
+					<span></span>
+					<span></span>
+
+				</button>
+
+			</div>
+
+		</div>
+
+		<header class="header-left" id="navbar-collapse-toggle">
+			
+			<div class="top">
+
+				<a href="#">W</a>
+
+			</div>
+
+			<ul class="nav nav-menu">
+
+				<li>
+
+					<a href="" class="nav-link active" data-toggle='tooltip' title="Home"><i class="fa fa-user-o"></i></a>
+
+				</li>
+
+				<li>
+
+					<a href="" class="nav-link" data-toggle='tooltip' title="About"><i class="fa fa-address-book-o"></i></a>
+
+				</li>
+
+				<li>
+
+					<a href="" class="nav-link" data-toggle='tooltip' title="Resume"><i class="fa fa-file-word-o"></i></a>
+
+				</li>
+
+				<li>
+
+					<a href="" class="nav-link" data-toggle='tooltip' title="Work"><i class="fa fa-wpexplorer"></i></a>
+
+				</li>
+
+				<li>
+
+					<a href="" class="nav-link" data-toggle='tooltip' title="Blog"><i class="fa fa-rss"></i></a>
+
+				</li>
+
+				<li>
+
+					<a href="" class="nav-link" data-toggle='tooltip' title="Contact"><i class="fa fa-volume-control-phone"></i></a>
+
+				</li>
+
+			</ul>
+
+		</header>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+
+		<script>
+			
+			(function($) {
+				'use strict';
+				var NAY = {};
+				NAY.MenuTogglerClose = function(){
+					$('.toggler-menu').on('click', function() {
+						$('.header-left').stop().toggleClass('menu-open');
+					});
+
+					$('.header-left a').on('click', function() {
+						var toggle = $('.toggler-menu');
+					})
+				}
+
+				$(document).on('ready', function(){
+					NAY.MenuTogglerClose();
+				});
+
+			})(jQuery);
+
+		</script>
+
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
 
 	</body>
 
