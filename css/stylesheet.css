@@ -419,3 +419,48 @@ button.toggler-menu {
 	font-weight: 400;
 	padding-right: 10px;
 }
+
+.separated {
+	background: url(../img/border.png);
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-repeat: repeat-x;
+	background-size: auto 6px;
+	background-position: center;
+}
+
+.box1 {
+	background: #0b0b13;
+	padding: 40px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.box1::before {
+	content: '';
+	position: absolute;
+	top: -220px;
+	left: -220px;
+	width: 200px;
+	height: 200px;
+	border-radius: 0;
+	z-index: -1;
+	background: #0b0b13;
+	transition: cubic-bezier(.39, .58, .57, 1) all .55s;
+}
+
+.box1::after {
+	content: '';
+	position: absolute;
+	top: -72px;
+	left: -40px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	z-index: -2;
+	background-color: #f5d020;
+	background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+	transition: cubic-bezier(.39, .58, .57, 1) all .15s;
+}
