@@ -507,3 +507,102 @@ button.toggler-menu {
 	border-radius: 0;
 	transition: cubic-bezier(.39, .58, .57, 1) all .55s;
 }
+
+#wrap {
+	width: 100%;
+	max-width: 1420px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+.wrapper {
+	position: relative;
+	padding: 0 0 50px 0;
+	margin: 0 auto;
+}
+
+.wrapper img {
+	width: 395px;
+	height: 277px;
+}
+
+.topbar {
+	position: relative;
+	padding: 20px 0;
+	margin: 0 0 40px;
+}
+
+.back {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -20px 0 0 -20px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 38px;
+	color: #999;
+	background: #ddd;
+	cursor: pointer;
+	display: none;
+	user-select: none;
+}
+
+.tp-grid {
+	list-style: none;
+	position: relative;
+	display: block;
+}
+
+.tp-grid li {
+	position: absolute;
+	cursor: pointer;
+	border: 5px solid #fff;
+	display: none;
+	overflow: hidden;
+	backface-visibility: hidden;
+}
+
+.no-js .tp-grid li {
+	position: relative;
+	display: inline-block;
+}
+
+.tp-grid li a {
+	display: block;
+	outline: none;
+}
+
+.tp-grid li img {
+	display: block;
+	border: none;
+}
+
+.tp-info, .tp-title {
+	position: absolute;
+	background: #fff;
+	line-height: 20px;
+	color: #292929;
+	font-size: 22px;
+	line-height: 26px;
+	top: 40%;
+	width: 75%;
+	padding: 10px;
+	font-weight: 400;
+	text-align: right;
+	left: -100%;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .1),
+				10px 0 10px -3px rgba(0, 0, 0, .7),
+				inset 0 0 5px rgba(0, 0, 0, .04);
+
+}
+
+.tp-title {
+	padding: 10px 35px 10px 10px;
+	left: 0px;
+}
+
+.tp-title span:nth-child(2) {
+	color: #fff;
+}
